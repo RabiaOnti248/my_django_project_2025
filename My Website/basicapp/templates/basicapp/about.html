@@ -1,0 +1,38 @@
+{% extends "basicapp/base.html" %}
+
+{% block title %}About Me & Project Details{% endblock %}
+
+{% block content %}
+    <h2>About the Developer and Project</h2>
+    
+    <div style="border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; background-color: #f9f9f9;">
+        <h3>Developer Information</h3>
+        <p><strong>University name</strong> University of Asia Pasific</p>
+        <p><strong>Name:</strong>Rabia Sultana Aunti</p>
+        <p><strong>Student ID / Roll No.:</strong>20201019</p>
+        <p><strong>Department:</strong>CSE(Computer Science and Engineering)</p>
+        <p><strong>Course Title:</strong>Software Engineering Lab</p>
+        <p><strong>Course Code:</strong> CSE 322</p>
+       <b> <p><strong>Purpose:</strong> Academic Project Submission</p> </b>
+    </div>
+
+    <h3>Project Overview: Basic Django Website</h3>
+    <p>This project is a simple, three-page website built using the **Django Web Framework** (Python) to demonstrate foundational skills in full-stack web development.</p>
+
+    <h4>Technical Stack (Technology Used)</h4>
+    <ul>
+        <li><strong>Backend:</strong> Django (Python)</li>
+        <li><strong>Database:</strong> SQLite3 (Default for Django)</li>
+        <li><strong>Frontend:</strong> HTML5 and Basic CSS (Templating via Jinja2/Django Template Language)</li>
+        <li><strong>Core Architectural Pattern:</strong> MVT (Model-View-Template)</li>
+    </ul>
+
+    <h4>Implemented Features (3 pages)</h4>
+    <ol>
+        <li><strong>Home Page:</strong> The main landing page of the application.</li>
+        <li><strong>About Us Page:</strong> (This page) Contains developer details and project summary.</li>
+        <li><strong>Contact Page:</strong> Includes a functional HTML form. Upon submission, the form data is securely captured by the Django **View** and saved into the **ContactMessage Model** in the database.</li>
+    </ol>
+    
+    <p style="margin-top: 20px;">This project successfully connects the frontend interface with the backend logic, achieving a complete, reproducible web application as required for the submission.</p>
+{% endblock %}
